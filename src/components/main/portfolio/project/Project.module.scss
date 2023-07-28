@@ -1,0 +1,71 @@
+@import "/src/styles/variaveis";
+
+.container{
+    display: grid;
+    justify-content: space-between;
+
+    gap: 1rem;
+    align-items: center;
+    background: $bg-wm-secundary;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    @media (min-width: #{$screen-lg-min}){
+        grid-template-columns: 55% 40%;
+    }
+    &__img{
+        width: 100%;
+        height: 20rem;
+        overflow: hidden;
+        border-radius: 1rem;
+        img{
+            border-radius: 1rem;
+            width: 100%;
+       
+        }
+        
+    }
+    h3{
+        font-size: 1.0625rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $txt-wm-primary;
+    }
+    &__info{
+        
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: $txt-wm-secundary;
+    width: 100%;
+    margin: 1rem 0;
+        &_description{
+            line-height: 1.5;
+        }
+        &_stacks{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            p{
+                padding: 1rem;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                font-weight: 700;
+                color: $txt-wm-primary;
+            }
+        }
+        &_links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            a{
+                font-size: 1.3rem;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                text-decoration: none;
+            }
+        }
+    }
+}

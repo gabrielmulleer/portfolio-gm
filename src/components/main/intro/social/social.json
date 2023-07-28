@@ -1,0 +1,14 @@
+    [
+        {
+            "title": "Linkedin",
+            "icone":"linkedin",
+            "link":"https://www.linkedin.com/in/gabrielmulleer/",
+            "id": 1
+        },
+        {
+            "title": "Github",
+            "icone":"github",
+            "link":"https://github.com/gabrielmulleer/",
+            "id": 2
+        }
+    ]
