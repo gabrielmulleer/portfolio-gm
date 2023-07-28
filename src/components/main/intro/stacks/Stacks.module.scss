@@ -1,0 +1,52 @@
+@import "/src/styles/variaveis";
+.skills{
+    @media (min-width: #{$screen-lg-min}){
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        // justify-content: space-between;
+        width: 100%;
+        max-width: 50rem;
+    }
+    @media (min-width: #{$screen-xl-min}){
+            
+        max-width: 60rem;
+    }
+    h4{
+        font-size: 1.0625rem;
+        border-bottom: 2px solid rgba(45,46,50,.5);
+        width: 6rem;
+        margin: 0 auto;
+        padding-bottom: .625rem;
+        margin-bottom: 1.875rem;
+        font-weight: 700;
+        color: $txt-wm-primary;
+        @media (min-width: #{$screen-lg-min}){
+            margin: 0;
+            border-bottom: 0;
+            border-right: 3px solid rgba(45,46,50,.5);
+            padding-bottom: 0;
+            padding-right: .625rem;
+            width: 7rem;
+           
+        }
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5625rem;
+        
+        li{
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,.09);
+            height: 4.0625rem;
+            width: 4.0625rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

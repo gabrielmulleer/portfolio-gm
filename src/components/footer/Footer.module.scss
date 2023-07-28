@@ -1,0 +1,18 @@
+@import "../../styles/variaveis";
+
+.wrapper{
+    background: $footer;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.4;
+    span{
+        display: flex;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,85 @@
+@import "/src/styles/variaveis";
+
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    background: $bg-wm-primary;
+    padding: 7rem $padding-horizontal;
+    
+    @media (min-width: #{$screen-lg-min}){
+        gap: 3rem;
+        text-align: start;
+        padding: 7rem $padding-horizontal-lg;
+    }
+    @media (min-width: #{$screen-xl-min}){
+        
+        padding: 7rem $padding-horizontal-xl;
+    }
+    &__container{
+        width: 100%;
+        max-width: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media (min-width: #{$screen-lg-min}){
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            max-width: 50rem;
+        }
+        @media (min-width: #{$screen-xl-min}){
+            
+            max-width: 60rem;
+        }
+    
+    &_picture{
+        
+        width: 17.5rem;
+        height: 17.5rem;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        background-image: url("/assets/img/profile.png");
+        @media (min-width: #{$screen-xl-min}){
+        width: 25rem;
+        height: 25rem;
+        }
+    }
+    &_content{
+        @media (min-width: #{$screen-lg-min}){
+            
+            width: 25rem;
+    }
+        &_title{
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin: 2rem 0;
+            font-weight: 700;
+            color: $txt-wm-primary;
+            @media (min-width: #{$screen-lg-min}){
+                font-size: 3.5rem;
+            }
+            
+        }
+        &_description{
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-bottom: 3.5rem;
+            color: $txt-wm-secundary;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 5rem;
+            @media (min-width: #{$screen-lg-min}){
+                margin-bottom: 0;
+                justify-content: start;
+            }    
+        }}
+    }
+}
